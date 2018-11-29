@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Mid_Term" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="MID-TERM-PROJECT-VENDING" translatesAutoresizingMaskIntoConstraints="NO" id="8wi-I2-Sp8">
+                                <rect key="frame" x="0.0" y="2" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$1.35" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMG-1G-mHO">
+                                <rect key="frame" x="27" y="90" width="41" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CHANGE " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TD2-Js-NUr">
+                                <rect key="frame" x="24" y="550" width="124" height="39"/>
+                                <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="0.6835402397260274" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <color key="textColor" red="0.36974510760000001" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$00.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DmW-mO-0jU">
+                                <rect key="frame" x="213" y="315" width="125" height="39"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" red="0.36974510760000001" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FjU-8o-tgW">
+                                <rect key="frame" x="204" y="572" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$0.10" image="Ten-Cent"/>
+                                <connections>
+                                    <action selector="Dime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SOW-mX-zUE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZb-q3-3W5">
+                                <rect key="frame" x="194" y="470" width="100" height="100"/>
+                                <state key="normal" title="$1" image="One-Dollar"/>
+                                <connections>
+                                    <action selector="Dollar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vu2-lv-7Tr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="743-k0-YPX">
+                                <rect key="frame" x="287" y="568" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$0.05" image="Five-Cents"/>
+                                <connections>
+                                    <action selector="Nickle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBD-gs-1Ed"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7r-FK-eKj">
+                                <rect key="frame" x="292" y="492" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="$0.25" image="Twenty-Five-Cents"/>
+                                <connections>
+                                    <action selector="Quarter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6fG-iM-OfP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Im9-WX-42s">
+                                <rect key="frame" x="16" y="216" width="118" height="63"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Water-Logo"/>
+                                <connections>
+                                    <action selector="Water:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yJp-yS-JdV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$1.75" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Pf-5w-b0l">
+                                <rect key="frame" x="27" y="287" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$1.20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qH8-v2-5mQ">
+                                <rect key="frame" x="27" y="187" width="55" height="29"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Soda-Image" translatesAutoresizingMaskIntoConstraints="NO" id="1Qy-LB-5Ds">
+                                <rect key="frame" x="206" y="90" width="153" height="93"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAL-cG-MOD">
+                                <rect key="frame" x="16" y="315" width="118" height="63"/>
+                                <state key="normal" title="Button" image="Soda-Logo"/>
+                                <connections>
+                                    <action selector="Coke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6go-he-Jrq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gut-cj-nnD">
+                                <rect key="frame" x="16" y="116" width="118" height="63"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Chips-Logo"/>
+                                <connections>
+                                    <action selector="Chips:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b9q-0X-Ppc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TD2-Js-NUr" firstAttribute="top" secondItem="dAL-cG-MOD" secondAttribute="bottom" constant="172" id="4Ga-vP-u4d"/>
+                            <constraint firstItem="8wi-I2-Sp8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6dL-6k-hgH"/>
+                            <constraint firstItem="8wi-I2-Sp8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ftr-Ey-tUz"/>
+                            <constraint firstItem="8wi-I2-Sp8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GsW-ed-ntW"/>
+                            <constraint firstItem="HZb-q3-3W5" firstAttribute="leading" secondItem="TD2-Js-NUr" secondAttribute="trailing" constant="46" id="J6S-fW-0Ax"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TD2-Js-NUr" secondAttribute="bottom" constant="78" id="WLb-00-6Cu"/>
+                            <constraint firstItem="8wi-I2-Sp8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zom-Fe-QuZ"/>
+                            <constraint firstItem="TD2-Js-NUr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="mz5-GP-n2T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Balance" destination="DmW-mO-0jU" id="Ziz-5a-MUe"/>
+                        <outlet property="myChange" destination="TD2-Js-NUr" id="OpQ-2x-tRl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Chips-Logo" width="1300" height="732"/>
+        <image name="Five-Cents" width="572.727294921875" height="572.727294921875"/>
+        <image name="MID-TERM-PROJECT-VENDING" width="270" height="584.6400146484375"/>
+        <image name="One-Dollar" width="572.727294921875" height="572.727294921875"/>
+        <image name="Soda-Image" width="598" height="336"/>
+        <image name="Soda-Logo" width="460" height="300"/>
+        <image name="Ten-Cent" width="572.727294921875" height="572.727294921875"/>
+        <image name="Twenty-Five-Cents" width="572.727294921875" height="572.727294921875"/>
+        <image name="Water-Logo" width="535" height="325"/>
+    </resources>
+</document>
